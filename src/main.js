@@ -3,4 +3,6 @@ import App from "./App.vue";
 import "ant-design-vue/dist/antd.css";
 import { Button } from "ant-design-vue";
 import "./style/tailwind.css"
-createApp(App).use(Button).mount("#app");
+import store from "./store"
+import router from "./router/index"
+createApp(App).use(store).use(router).use(Button).mount("#app");
