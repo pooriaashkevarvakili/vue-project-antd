@@ -2,6 +2,9 @@
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Ant Design Vue 3 in CodeSandbox!" />
   <a-button type="primary" @click="open"> go antdv.com </a-button>
+  <div>
+  <a-radio >Radio</a-radio>
+  </div>
 </template>
 <script>
 import HelloWorldVue from "./components/HelloWorld.vue";
