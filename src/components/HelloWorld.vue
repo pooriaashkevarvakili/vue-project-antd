@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <a-button type="primary" ghost>Primary</a-button>
+  <div class="hello ">
+    <a-button class=" text-2xl text-white bg-black"  >Primary</a-button>
     <a-button ghost>Default</a-button>
     <a-button type="dashed" ghost>Dashed</a-button>
     <a-button type="danger" ghost>Danger</a-button>
