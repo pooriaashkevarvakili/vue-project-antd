@@ -1,18 +1,25 @@
 <template>
-
-    <p class="text-3xl text-red-500 uppercase	">hello world</p>
-  <a-button class="text-2xl text-green-500 p-3" type="primary">
-    Primary
-  </a-button>
-
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Ant Design Vue 3 in CodeSandbox!" />
+  <a-button type="primary" @click="open"> go antdv.com </a-button>
 </template>
 <script>
+import HelloWorldVue from "./components/HelloWorld.vue";
+export default {
+  name: "App",
+  setup() {
+    return {
+      open: () => {
+        window.open("https://antdv.com", "_blank");
+      },
+    };
+  },
+  components: {
+    HelloWorld: HelloWorldVue,
+  },
+};
 </script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -20,18 +27,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  margin-top: 60px;
 }
 </style>
